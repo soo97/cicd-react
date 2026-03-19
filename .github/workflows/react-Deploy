@@ -37,7 +37,7 @@ jobs:
       # 4. 리액트 프로젝트 빌드
       - name: Build React
         run: npm run Build
-        # 결과물(Artifact) 생성 : dist/ 
+        # 결과물(Artifact) 생성 : dist/
 
       # 5. AWS 인증 (OIDC 방식)
       - name: Configure AWS credentials (OIDC)
@@ -57,5 +57,5 @@ jobs:
       - name: Invalidate CloudFront Cache
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \ 
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*"
