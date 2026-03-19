@@ -32,7 +32,7 @@ jobs:
 
       # 3. 의존성 설치
       - name: Install Dependencies
-        run: npm install #package.json에 작성되어 있는 의존성 라이브러리 설치 
+        run: npm install #package.json에 작성되어 있는 의존성 라이브러리 설치  
 
       # 4. 리액트 프로젝트 빌드
       - name: Build React
