@@ -28,12 +28,11 @@ jobs:
       - name: Setup Node.jobs
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       # 3. 의존성 설치
       - name: Install Dependencies
         run: npm install #package.json에 작성되어 있는 의존성 라이브러리 설치
-        working-directory: frontend
 
       # 4. 리액트 프로젝트 빌드
       - name: Build React
