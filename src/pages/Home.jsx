@@ -16,7 +16,7 @@ function Home() {
                         fontSize: "1.1rem"
                     }}
                 >
-                    이 플랫폼에서 Spring 백엔드 개발의 기본 개념을 실습할 수 있습니다.aa
+                    이 플랫폼에서 Spring 백엔드 개발의 기본 개념을 실습할 수 있습니다.a
                 </p>
                 <div className="card-grid">
                     <a
